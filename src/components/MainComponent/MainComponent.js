@@ -18,6 +18,10 @@ const MainComponentContainer = styled.section`
     justify-content: space-around;
     align-items: center;
 
+    @media (max-width: 400px) {
+      flex-direction: column;
+    }
+
     .home-content__text {
       & h1 {
         font-size: 40px;
@@ -33,6 +37,9 @@ const MainComponentContainer = styled.section`
     .home-content__gif-container {
       height: 400px;
       margin: 0;
+      @media (max-width: 400px) {
+        height: 200px;
+      }
 
       & img {
         border-radius: 15px;

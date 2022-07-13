@@ -21,7 +21,7 @@ const NavBarContainer = styled.nav`
     width: 100%;
     max-width: 400px;
 
-    @media (max-width: 400px) {
+    @media (max-width: 480px) {
       max-width: 400px;
       justify-content: space-around;
     }
