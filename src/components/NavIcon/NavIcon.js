@@ -24,6 +24,10 @@ const CottageRoundedIconRotate = styled.li`
     transition: 0.7s ease-out;
     cursor: pointer;
     font-size: 40px;
+
+    @media (max-width: 480px) {
+      font-size: 30px;
+    }
   }
 
   & p {
