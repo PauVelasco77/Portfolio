@@ -8,9 +8,7 @@ const CottageRoundedIconRotate = styled.li`
 
   :hover {
     & svg {
-      -webkit-transform: rotateZ(360deg);
-      -moz-transform: rotateZ(360deg);
-      transform: rotateZ(360deg);
+      transform: scale(1.1);
     }
 
     & p {
@@ -19,9 +17,7 @@ const CottageRoundedIconRotate = styled.li`
   }
 
   & svg {
-    -webkit-transition: 0.7s ease-out;
-    -moz-transition: 0.7s ease-out;
-    transition: 0.7s ease-out;
+    transition: 0.2s ease-out;
     cursor: pointer;
     font-size: 40px;
 
