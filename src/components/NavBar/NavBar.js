@@ -19,6 +19,11 @@ const NavBarContainer = styled.nav`
     justify-content: space-between;
     width: 100%;
     max-width: 400px;
+
+    @media (max-width: 400px) {
+      max-width: 400px;
+      justify-content: space-around;
+    }
   }
 
   & p {
