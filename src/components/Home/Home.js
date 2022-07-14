@@ -1,4 +1,4 @@
-import HomeCard from "../HomeCard/HomeCard";
+import NameHomeCard from "../HomeCard/NameHomeCard";
 import styled from "@emotion/styled";
 
 const HomeContainer = styled.section`
@@ -18,7 +18,7 @@ const HomeContainer = styled.section`
 const Home = () => {
   return (
     <HomeContainer>
-      <HomeCard />
+      <NameHomeCard />
     </HomeContainer>
   );
 };
