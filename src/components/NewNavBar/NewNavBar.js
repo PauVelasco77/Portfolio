@@ -77,7 +77,7 @@ const NewNavBar = () => {
         </Typography>
       </Profile>
       <CustonDivider variant="middle" />
-      <NavBarItem name={"Home"} icon={<CottageIcon sx={{ color: "#fff" }} />} />
+      {/* <NavBarItem name={"Home"} icon={<CottageIcon sx={{ color: "#fff" }} />} /> */}
       <NavBarItem
         name={"About Me"}
         icon={<FaceIcon sx={{ color: "#fff" }} />}

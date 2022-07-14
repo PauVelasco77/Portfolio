@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const HomeCardContainer = styled(Paper)`
   height: 300px;
-  width: 400px;
+  width: 30%;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@ const HomeCardContainer = styled(Paper)`
   color: rgb(52, 71, 103);
   align-items: center;
   position: relative;
-  margin-top: 150px;
+  /* margin-top: 150px; */
 
   & img {
     border-radius: 7.5px;

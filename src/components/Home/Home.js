@@ -1,6 +1,7 @@
 import NameHomeCard from "../HomeCard/NameHomeCard";
 import styled from "@emotion/styled";
 import GifsCard from "../GifsCard/GifsCard";
+import AboutMe from "../AboutMe/AboutMe";
 
 const HomeContainer = styled.section`
   height: 100vh;
@@ -8,7 +9,7 @@ const HomeContainer = styled.section`
   padding: 50px 20px 20px 270px;
   display: flex;
   flex-wrap: wrap;
-  gap: 5%;
+  justify-content: space-between;
   .background {
     background-color: #344767;
     height: 100%;
@@ -23,6 +24,7 @@ const Home = () => {
     <HomeContainer>
       <NameHomeCard />
       <GifsCard />
+      <AboutMe />
     </HomeContainer>
   );
 };

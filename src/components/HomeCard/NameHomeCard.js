@@ -5,7 +5,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 const HomeCardContainer = styled(Paper)`
   height: 300px;
-  width: 280px;
+  width: 30%;
   background-color: white;
   display: flex;
   justify-content: center;
