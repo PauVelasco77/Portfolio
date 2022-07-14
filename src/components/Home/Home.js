@@ -2,6 +2,7 @@ import NameHomeCard from "../HomeCard/NameHomeCard";
 import styled from "@emotion/styled";
 import GifsCard from "../GifsCard/GifsCard";
 import AboutMe from "../AboutMe/AboutMe";
+import DownLoadCV from "../DownloadCV/DownloadCV";
 
 const HomeContainer = styled.section`
   height: 100vh;
@@ -23,6 +24,7 @@ const Home = () => {
   return (
     <HomeContainer>
       <NameHomeCard />
+      <DownLoadCV />
       <GifsCard />
       <AboutMe />
     </HomeContainer>
