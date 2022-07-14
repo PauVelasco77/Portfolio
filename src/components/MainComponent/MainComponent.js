@@ -1,7 +1,7 @@
 import { GitHub, LinkedIn } from "@mui/icons-material";
 import styled from "@emotion/styled";
 import { commonStyles } from "../../styles/commonStyles";
-import NavBar from "../NavBar/NavBar";
+import NewNavBar from "../NewNavBar/NewNavBar";
 
 const MainComponentContainer = styled.section`
   height: calc(100vh - 65px);
@@ -76,7 +76,7 @@ const LinkedInIcon = styled(LinkedIn)`
 const MainComponent = () => {
   return (
     <>
-      <NavBar />
+      <NewNavBar />
       <MainComponentContainer>
         <div className="home-content">
           <div className="home-content__text">
