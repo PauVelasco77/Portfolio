@@ -1,5 +1,4 @@
 import { Avatar, ListItem, Divider, Paper, Typography } from "@mui/material";
-import CottageIcon from "@mui/icons-material/Cottage";
 import styled from "@emotion/styled";
 import FaceIcon from "@mui/icons-material/Face";
 import DvrIcon from "@mui/icons-material/Dvr";
@@ -77,7 +76,7 @@ const NewNavBar = () => {
         </Typography>
       </Profile>
       <CustonDivider variant="middle" />
-      <NavBarItem name={"Home"} icon={<CottageIcon sx={{ color: "#fff" }} />} />
+      {/* <NavBarItem name={"Home"} icon={<CottageIcon sx={{ color: "#fff" }} />} /> */}
       <NavBarItem
         name={"About Me"}
         icon={<FaceIcon sx={{ color: "#fff" }} />}

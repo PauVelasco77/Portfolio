@@ -2,6 +2,7 @@ import { GitHub, LinkedIn } from "@mui/icons-material";
 import styled from "@emotion/styled";
 import { commonStyles } from "../../styles/commonStyles";
 import NewNavBar from "../NewNavBar/NewNavBar";
+import Home from "../Home/Home";
 
 const MainComponentContainer = styled.section`
   height: calc(100vh - 65px);
@@ -77,33 +78,7 @@ const MainComponent = () => {
   return (
     <>
       <NewNavBar />
-      <MainComponentContainer>
-        <div className="home-content">
-          <div className="home-content__text">
-            <h1>Hello! I'm Pau Velasco</h1>
-            <h2>Junior Frontend Developer</h2>
-            <div className="home-content__text--icons">
-              <a
-                href={"https://github.com/PauVelasco77"}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <GitHubIcon />
-              </a>
-              <a
-                href={"https://www.linkedin.com/in/pau-velasco-garrof%C3%A9/"}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <LinkedInIcon />
-              </a>
-            </div>
-          </div>
-          <figure className="home-content__gif-container">
-            <img src="../../../codingGIF2.gif" alt="coding GIF" />
-          </figure>
-        </div>
-      </MainComponentContainer>
+      <Home />
     </>
   );
 };
