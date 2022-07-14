@@ -1,5 +1,6 @@
-import { Avatar, Box, Paper, Typography } from "@mui/material";
+import { Avatar, Box, Divider, Paper, Typography } from "@mui/material";
 import styled from "@emotion/styled";
+import { ListItem } from "@mui/material";
 
 const NavContainer = styled(Paper)`
   background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
@@ -11,7 +12,7 @@ const NavContainer = styled(Paper)`
   font-size: 40px;
 `;
 
-const Profile = styled(Box)`
+const Profile = styled(ListItem)`
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -33,6 +34,23 @@ const Profile = styled(Box)`
   }
 `;
 
+const CustonDivider = styled(Divider)`
+  border-top: 0px solid rgba(0, 0, 0, 0.08);
+  border-right: 0px solid rgba(0, 0, 0, 0.08);
+  border-left: 0px solid rgba(0, 0, 0, 0.08);
+  height: 0.0625rem;
+  margin: 1rem 0px;
+  border-bottom: none;
+  opacity: 0.25;
+  background-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+`;
+
 const NewNavBar = () => {
   return (
     <NavContainer elevation={0} sx={{ maxWidth: 256 }}>
@@ -42,6 +60,7 @@ const NewNavBar = () => {
           Pau Velasco Garrofé
         </Typography>
       </Profile>
+      <CustonDivider variant="middle" />
     </NavContainer>
   );
 };
