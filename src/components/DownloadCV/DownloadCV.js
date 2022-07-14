@@ -68,7 +68,7 @@ const DownLoadCV = () => {
         <a
           id="en"
           className="cv-container"
-          href="../../../CV-PauVelascoENG.pdf"
+          href="../../../CV-PauVelascoENG (1).pdf"
           download="CVPauVelasco-ENG"
         >
           <p>ENGLISH VERSION</p>
@@ -77,7 +77,7 @@ const DownLoadCV = () => {
         <a
           id="es"
           className="cv-container"
-          href="../../../CV-PauVelasco.pdf"
+          href="../../../CV-PauVelasco (1).pdf"
           download="CVPauVelasco-ES"
         >
           <p>SPANISH VERSION</p>
