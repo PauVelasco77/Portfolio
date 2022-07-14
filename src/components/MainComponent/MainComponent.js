@@ -2,6 +2,7 @@ import { GitHub, LinkedIn } from "@mui/icons-material";
 import styled from "@emotion/styled";
 import { commonStyles } from "../../styles/commonStyles";
 import NewNavBar from "../NewNavBar/NewNavBar";
+import Home from "../Home/Home";
 
 const MainComponentContainer = styled.section`
   height: calc(100vh - 65px);
@@ -77,6 +78,7 @@ const MainComponent = () => {
   return (
     <>
       <NewNavBar />
+      <Home />
       <MainComponentContainer>
         <div className="home-content">
           <div className="home-content__text">
