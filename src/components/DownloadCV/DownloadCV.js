@@ -3,8 +3,8 @@ import styled from "@emotion/styled";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 
 const HomeCardContainer = styled(Paper)`
-  height: 230px;
-  width: 30%;
+  height: 270px;
+  width: 33%;
   background-color: white;
   display: flex;
   justify-content: center;

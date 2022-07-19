@@ -47,8 +47,7 @@ const AboutMe = () => {
         React, redux and Typescript, don't hesitate to drop by my github or
         write me a message! <br />
         <br />
-        Github: https://github.com/PauVelasco77 Translated with
-        www.DeepL.com/Translator (free version)
+        Github: https://github.com/PauVelasco77
       </p>
     </HomeCardContainer>
   );
