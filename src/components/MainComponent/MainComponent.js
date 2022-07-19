@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import { commonStyles } from "../../styles/commonStyles";
 import NewNavBar from "../NewNavBar/NewNavBar";
 import Home from "../Home/Home";
+import AboutMe from "../AboutMe/AboutMe";
 
 const MainComponentContainer = styled.section`
   height: calc(100vh - 65px);
@@ -77,8 +78,10 @@ const LinkedInIcon = styled(LinkedIn)`
 const MainComponent = () => {
   return (
     <>
-      <NewNavBar />
-      <Home />
+      <NewNavBar>
+        <Home />
+        <AboutMe />
+      </NewNavBar>
     </>
   );
 };

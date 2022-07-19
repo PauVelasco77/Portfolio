@@ -6,6 +6,12 @@ import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 import NavBarItem from "../NavBarItem/NavBarItem";
 import CottageIcon from "@mui/icons-material/Cottage";
 
+const ChildrenContainer = styled.div`
+  display: flex;
+  margin-left: 250px;
+  flex-direction: column;
+`;
+
 const NavContainer = styled(Paper)`
   background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
   height: 100vh;
@@ -67,40 +73,43 @@ const CustonDivider = styled(Divider)`
   );
 `;
 
-const NewNavBar = () => {
+const NewNavBar = ({ children }) => {
   return (
-    <NavContainer elevation={0} sx={{ maxWidth: 256 }}>
-      <Profile className="my-profile">
-        <Avatar
-          src="../../../profilePhoto2.jpg"
-          alt="avatar photo"
-          sx={{ height: 36, width: 36 }}
-        />
-        <Typography sx={{ color: "#fff", fontWeight: 4300, fontSize: 14 }}>
-          Pau Velasco Garrofé
-        </Typography>
-      </Profile>
-      <CustonDivider variant="middle" />
-      <a href="#home">
+    <>
+      <NavContainer elevation={0} sx={{ maxWidth: 256 }}>
+        <Profile className="my-profile">
+          <Avatar
+            src="../../../profilePhoto2.jpg"
+            alt="avatar photo"
+            sx={{ height: 36, width: 36 }}
+          />
+          <Typography sx={{ color: "#fff", fontWeight: 4300, fontSize: 14 }}>
+            Pau Velasco Garrofé
+          </Typography>
+        </Profile>
+        <CustonDivider variant="middle" />
+        <a href="#home">
+          <NavBarItem
+            name={"Home"}
+            icon={<CottageIcon sx={{ color: "#fff" }} />}
+          />
+        </a>
         <NavBarItem
-          name={"Home"}
-          icon={<CottageIcon sx={{ color: "#fff" }} />}
+          name={"About Me"}
+          icon={<FaceIcon sx={{ color: "#fff" }} />}
         />
-      </a>
-      <NavBarItem
-        name={"About Me"}
-        icon={<FaceIcon sx={{ color: "#fff" }} />}
-      />
-      <NavBarItem
-        name={"My Projects"}
-        icon={<DvrIcon sx={{ color: "#fff" }} />}
-      />
-      <NavBarItem
-        name={"Contact"}
-        icon={<PermContactCalendarIcon sx={{ color: "#fff" }} />}
-      />
-      <CustonDivider variant="middle" />
-    </NavContainer>
+        <NavBarItem
+          name={"My Projects"}
+          icon={<DvrIcon sx={{ color: "#fff" }} />}
+        />
+        <NavBarItem
+          name={"Contact"}
+          icon={<PermContactCalendarIcon sx={{ color: "#fff" }} />}
+        />
+        <CustonDivider variant="middle" />
+      </NavContainer>
+      <ChildrenContainer>{children}</ChildrenContainer>
+    </>
   );
 };
 
