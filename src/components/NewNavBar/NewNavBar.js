@@ -94,10 +94,12 @@ const NewNavBar = ({ children }) => {
             icon={<CottageIcon sx={{ color: "#fff" }} />}
           />
         </a>
-        <NavBarItem
-          name={"About Me"}
-          icon={<FaceIcon sx={{ color: "#fff" }} />}
-        />
+        <a href="#about-me">
+          <NavBarItem
+            name={"About Me"}
+            icon={<FaceIcon sx={{ color: "#fff" }} />}
+          />
+        </a>
         <NavBarItem
           name={"My Projects"}
           icon={<DvrIcon sx={{ color: "#fff" }} />}

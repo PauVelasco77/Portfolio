@@ -39,7 +39,7 @@ const AboutMeCard = styled(Paper)`
 
 const AboutMe = () => {
   return (
-    <AboutMeContainer>
+    <AboutMeContainer id="about-me">
       <AboutMeCard elevation={2}>
         <h3>About Me</h3>
         <p>
