@@ -5,6 +5,7 @@ import DvrIcon from "@mui/icons-material/Dvr";
 import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 import NavBarItem from "../NavBarItem/NavBarItem";
 import CottageIcon from "@mui/icons-material/Cottage";
+import { GitHub, LinkedIn } from "@mui/icons-material";
 
 const ChildrenContainer = styled.div`
   display: flex;
@@ -109,6 +110,26 @@ const NewNavBar = ({ children }) => {
           icon={<PermContactCalendarIcon sx={{ color: "#fff" }} />}
         />
         <CustonDivider variant="middle" />
+        <a
+          href="https://github.com/PauVelasco77"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <NavBarItem
+            name={"GitHub"}
+            icon={<GitHub sx={{ color: "#fff" }} />}
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/pau-velasco-garrof%C3%A9/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <NavBarItem
+            name={"LinkedIn"}
+            icon={<LinkedIn sx={{ color: "#fff" }} />}
+          />
+        </a>
       </NavContainer>
       <ChildrenContainer>{children}</ChildrenContainer>
     </>
