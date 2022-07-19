@@ -5,27 +5,28 @@ import AboutMe from "../AboutMe/AboutMe";
 import DownLoadCV from "../DownloadCV/DownloadCV";
 
 const HomeContainer = styled.section`
-  height: 100vh;
-  background-color: #f0f2f5;
+  height: 100%;
   padding: 50px 20px 20px 270px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  .background {
-    background-color: #344767;
-    height: 100%;
-    width: 500px;
-    transform: rotate(45deg);
-    position: absolute;
+  gap: 10px;
+
+  .topContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
   }
 `;
 
 const Home = () => {
   return (
-    <HomeContainer>
-      <NameHomeCard />
-      <DownLoadCV />
-      <GifsCard />
+    <HomeContainer id="home">
+      <div className="topContainer">
+        <NameHomeCard />
+        <DownLoadCV />
+        <GifsCard />
+      </div>
       <AboutMe />
     </HomeContainer>
   );

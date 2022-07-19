@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const HomeCardContainer = styled(Paper)`
   height: 300px;
-  width: 30%;
+  width: 33%;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -23,7 +23,8 @@ const HomeCardContainer = styled(Paper)`
     border-radius: 7.5px;
     margin: auto;
     width: 350px;
-    height: 250px;
+    height: 270px;
+    object-fit: cover;
   }
 `;
 

@@ -4,6 +4,7 @@ import FaceIcon from "@mui/icons-material/Face";
 import DvrIcon from "@mui/icons-material/Dvr";
 import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 import NavBarItem from "../NavBarItem/NavBarItem";
+import CottageIcon from "@mui/icons-material/Cottage";
 
 const NavContainer = styled(Paper)`
   background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
@@ -13,6 +14,10 @@ const NavContainer = styled(Paper)`
   border-radius: 0 15px 15px 0;
   font-family: "Roboto", sans-serif;
   font-size: 40px;
+
+  a {
+    text-decoration: none;
+  }
 
   .my-profile {
     margin: 15px auto;
@@ -76,7 +81,12 @@ const NewNavBar = () => {
         </Typography>
       </Profile>
       <CustonDivider variant="middle" />
-      {/* <NavBarItem name={"Home"} icon={<CottageIcon sx={{ color: "#fff" }} />} /> */}
+      <a href="#home">
+        <NavBarItem
+          name={"Home"}
+          icon={<CottageIcon sx={{ color: "#fff" }} />}
+        />
+      </a>
       <NavBarItem
         name={"About Me"}
         icon={<FaceIcon sx={{ color: "#fff" }} />}
