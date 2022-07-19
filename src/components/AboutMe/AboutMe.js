@@ -2,7 +2,7 @@ import { Paper } from "@mui/material";
 import styled from "@emotion/styled";
 
 const AboutMeContainer = styled.section`
-  padding: 20px 20px 20px 20px;
+  padding: 0 20px 20px 20px;
 `;
 
 const AboutMeCard = styled(Paper)`
@@ -20,6 +20,12 @@ const AboutMeCard = styled(Paper)`
   color: rgb(52, 71, 103);
   align-items: center;
   position: relative;
+
+  & a {
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+  }
 
   & h3 {
     margin: 0;
@@ -53,7 +59,13 @@ const AboutMe = () => {
           React, redux and Typescript, don't hesitate to drop by my github or
           write me a message! <br />
           <br />
-          Github: https://github.com/PauVelasco77
+          <a
+            href="https://github.com/PauVelasco77"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github: https://github.com/PauVelasco77
+          </a>
         </p>
       </AboutMeCard>
     </AboutMeContainer>
