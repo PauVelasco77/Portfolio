@@ -2,7 +2,7 @@ import { Paper } from "@mui/material";
 import styled from "@emotion/styled";
 
 const AboutMeContainer = styled.section`
-  padding: 20px 20px 20px 20px;
+  padding: 0 20px 20px 20px;
 `;
 
 const AboutMeCard = styled(Paper)`
