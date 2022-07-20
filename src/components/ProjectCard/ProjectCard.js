@@ -2,8 +2,9 @@ import { CardMedia, Paper } from "@mui/material";
 import styled from "@emotion/styled";
 
 const HomeCardContainer = styled.div`
+  margin: 300px;
   height: 300px;
-  width: 33%;
+  width: 50%;
   background-color: white;
   display: flex;
   justify-content: center;
