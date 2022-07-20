@@ -4,6 +4,7 @@ import { commonStyles } from "../../styles/commonStyles";
 import NewNavBar from "../NewNavBar/NewNavBar";
 import Home from "../Home/Home";
 import AboutMe from "../AboutMe/AboutMe";
+import Projects from "../Projects/Projects";
 
 const MainComponentContainer = styled.section`
   height: calc(100vh - 65px);
@@ -81,6 +82,7 @@ const MainComponent = () => {
       <NewNavBar>
         <Home />
         <AboutMe />
+        <Projects />
       </NewNavBar>
     </>
   );
