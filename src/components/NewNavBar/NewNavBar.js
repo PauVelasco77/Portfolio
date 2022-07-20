@@ -10,7 +10,9 @@ import { GitHub, LinkedIn } from "@mui/icons-material";
 const ChildrenContainer = styled.div`
   display: flex;
   margin-left: 250px;
+  scroll-behavior: smooth;
   flex-direction: column;
+  overflow-y: hidden;
 `;
 
 const NavContainer = styled(Paper)`
