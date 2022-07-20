@@ -16,7 +16,6 @@ const HomeCardContainer = styled(Paper)`
   padding: 15px;
   color: rgb(52, 71, 103);
   align-items: center;
-  position: relative;
   /* margin-top: 150px; */
 
   & img {

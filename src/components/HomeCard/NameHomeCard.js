@@ -17,7 +17,12 @@ const HomeCardContainer = styled(Paper)`
   padding: 15px;
   color: rgb(52, 71, 103);
   align-items: center;
-  position: relative;
+
+  .photo-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
 
   & h1 {
     margin: 0;
@@ -69,21 +74,23 @@ const StyledRating = styled(Rating)`
 const NameHomeCard = () => {
   return (
     <HomeCardContainer elevation={2}>
-      <ImageElement
-        image="../../../profilePhoto.jpg"
-        alt="profilephoto"
-        sx={{ boxShadow: 3 }}
-      />
-      <StyledRating
-        name="customized-color"
-        defaultValue={2}
-        getLabelText={(value) => `${value} Heart${value !== 1 ? "s" : ""}`}
-        precision={0.5}
-        icon={<FavoriteIcon fontSize="inherit" />}
-        emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
-      />
-      <h1>Pau Velasco Garrofé</h1>
-      <h2>Junior Frontend Developer</h2>
+      <div className="photo-container">
+        <ImageElement
+          image="../../../profilePhoto.jpg"
+          alt="profilephoto"
+          sx={{ boxShadow: 3 }}
+        />
+        <StyledRating
+          name="customized-color"
+          defaultValue={2}
+          getLabelText={(value) => `${value} Heart${value !== 1 ? "s" : ""}`}
+          precision={0.5}
+          icon={<FavoriteIcon fontSize="inherit" />}
+          emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
+        />
+        <h1>Pau Velasco Garrofé</h1>
+        <h2>Junior Frontend Developer</h2>
+      </div>
     </HomeCardContainer>
   );
 };
